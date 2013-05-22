@@ -36,7 +36,6 @@ class Prim():
     def show_graph(self):
         graph=nx.Graph(self.graph)
         pos=nx.circular_layout(graph)
-        #pos=nx.spectral_layout(graph)
         nx.draw_networkx_nodes(graph, pos, node_color='r', node_size=500, alpha=0.8)
         nx.draw_networkx_edges(graph,pos,width=1,alpha=0.5)
         nx.draw_networkx_edges(graph,pos,
@@ -91,6 +90,5 @@ if __name__ == '__main__':
         }
    prim = Prim(graph,1)
    print "Path   : %s" %(prim.path)
-   # print "Weights : %s" %(prim.weights)
    print "Preds : %s" %(prim.Preds)
    prim.show_graph()
