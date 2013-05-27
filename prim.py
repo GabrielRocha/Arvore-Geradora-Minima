@@ -93,4 +93,4 @@ if __name__ == '__main__':
    prim = Prim(graph,1)
    print "Path   : %s" %(prim.path)
    print "Preds : %s" %(prim.Preds)
-   prim.show_graph()
+   prim.show_graph() 
